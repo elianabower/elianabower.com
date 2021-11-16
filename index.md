@@ -3,6 +3,6 @@ layout: default
 title: "Home"
 ---
 
-# Eliana Bower!
+# Eliana Bower
 
-Cool website by William
+Website under construction.

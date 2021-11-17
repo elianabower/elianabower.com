@@ -9,4 +9,6 @@ I'm a second year Marine Biology major and Sustainability Studies minor at the U
 
 {% include experiences.html %}
 
+Check out this baby octopus
+
 ![octopus](https://i.pinimg.com/originals/ee/98/b5/ee98b56495a02cab661d278a22d2a303.jpg)

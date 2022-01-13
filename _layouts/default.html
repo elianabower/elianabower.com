@@ -9,4 +9,41 @@
     </div>
 </body>
 
+<script>
+    if (window.location.href.endsWith("#baby")) {
+        window.location.href = "";
+    }
+
+    function div() {
+        var elem =  document.createElement("div");
+        elem.innerHTML = `
+            <div id="baby">
+                <h2>Baby Octopus</h2>
+                <p>Check out this baby octopus <span class="e">:D</span></p>
+                <img id="octo" src="https://i.pinimg.com/originals/ee/98/b5/ee98b56495a02cab661d278a22d2a303.jpg" />
+            </div>
+        `;
+
+        return elem;
+    }
+
+    function exists() {
+        return document.getElementById("baby") != null;
+    }
+
+    function baby() {
+        if (exists()) {
+            window.location.href = "#baby";
+        } else {
+            var content = document.getElementById("content");
+            content.appendChild(div());
+
+            var octo = document.getElementById("octo");
+            octo.onload = () => {
+                window.location.href = "#baby";
+            }
+        }
+    }
+</script>
+
 </html>

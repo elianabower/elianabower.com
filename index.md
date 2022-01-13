@@ -3,11 +3,21 @@ layout: default
 title: "Home"
 ---
 
-# Eliana Bower
+{% include title.html %}
 
-I'm a second year Marine Biology major and Sustainability Studies minor at the University of California, Santa Cruz. I'm driven by my passion for the ocean and protecting the environment around us. My career goal is to help mitigate the effects of climate change and expand the knowledge of what we currently know about the ocean. 
+I'm a second-year Marine Biology major and Sustainability Studies minor at the University of California, Santa Cruz. Driven by a desire to protect the environment, my goal is to help mitigate the effects of climate change by expanding our knowledge of the ocean.
 
-{% include experiences.html %}
+## Education
+
+{% include info.html data=site.data.education %}
+
+## Work Experience
+
+{% include info.html data=site.data.work %}
+
+## Projects
+
+{% include info.html data=site.data.projects %}
 
 Check out this baby octopus
 

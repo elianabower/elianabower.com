@@ -1,0 +1,18 @@
+<div class="info">
+    {% for item in include.data %}
+    <div class="box">
+        <p>
+            <strong>{{ item.title }}</strong><br />
+            <i>{{ item.duration.start }} - {{ item.duration.end }}</i><br />
+            {% if item.subtitle %}
+                <span>{{ item.subtitle }}</span>
+            {% endif %}
+        </p>
+        <ul>
+            {% for line in item.list %}
+            <li>{{ line }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>
